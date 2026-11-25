@@ -4,9 +4,11 @@
 
 A controllable Fisker Ocean model for dashboards, apps, websites and real-time 3D projects. It includes standard and lightweight GLB files, an editable Blender scene, a ready-to-open interactive viewer and integration notes for developers and their choice of LLM.
 
-[Watch the 30-second MP4 showcase](media/showcase.mp4) for a quick demonstration of the doors, retracting handles, wheels, lighting and solar roof. It is one continuous shot without labels, ending in Great White.
+Watch the 30-second showcase below for the doors, retracting handles, wheels, lighting and solar roof. It is one continuous shot without labels, ending in Great White.
 
-![Fisker Ocean with opening doors](media/showcase.jpg)
+https://github.com/user-attachments/assets/8878ad9c-539e-402b-b490-1f1dcf591a09
+
+[Download the showcase MP4](https://github.com/jdebardi/fisker-ocean-3d-model/releases/download/v3.0.0/showcase.mp4).
 
 ## Try the preview
 

@@ -13,3 +13,7 @@ First public release of the controllable Fisker Ocean 3D model.
 The release version is **3.0.0**; the compatible runtime contract remains **2.0**. Both GLBs are checked with the Khronos validator. Native engine adapters and target-device benchmarks are not supplied. Direct file:// preview startup is documented but was not browser-verified by the preparation tooling; the served preview and local GLB selection were exercised.
 
 Based on [Fisker Ocean (low-poly) by LagzDesign](https://sketchfab.com/3d-models/fisker-ocean-low-poly-f506bfe876864c04b68bdfc59070739a), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is an unofficial modified model; see ATTRIBUTION.md and LICENSE.md.
+
+### Showcase
+
+https://github.com/user-attachments/assets/8878ad9c-539e-402b-b490-1f1dcf591a09
