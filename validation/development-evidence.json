@@ -1,0 +1,68 @@
+{
+  "asset_revision": "2.3.3",
+  "contract_version": "2.0",
+  "validator": "Both GLBs: zero Khronos errors and warnings; see asset-validation.json.",
+  "rear_signals": {
+    "construction": "Material regions of Body_Main; legacy rear lamp nodes are empty markers with no renderables.",
+    "continuity": "One connected amber component per side, 292 positions shared with surrounding bumper vertices; identical world transform to the body.",
+    "convexity": "Both sides, three indicator heights: midpoint bows outward approximately 9.17mm from endpoint chord.",
+    "variants": "Light triangles remain identical after protected body optimisation."
+  },
+  "front_signals": "Each strip is a single connected black-grille surface patch, aligned to the grille top edge; zero shared vertices with white/chrome surfaces; detached overlapping trim stays unlit.",
+  "rear_bench": "One continuous cushion/backrest, width >1.25m; three headrests L/C/R; no separate rear chair cushions.",
+  "solar": "Shared embedded texture, correct whole-roof UV domains, upward normals; solar overlay positions and UVs identical in both variants.",
+  "retained_checks": [
+    "Wheel family fit, handle travel/hierarchy and tail-lamp visibility rays",
+    "Mirrors follow front doors; spoiler lamp follows hatch; D-pillar repeaters fixed",
+    "Previously compiled Kotlin: independent head/tail states, brakes, blink phase, steering/spin, paint floor, openings/handles"
+  ],
+  "browser": "Standard model inspected at low/elevated rear angles and with hatch open to verify three-seat bench; lightweight model and solar pattern inspected.",
+  "not_tested": [
+    "Actual Android application integration",
+    "Performance on Orange Pi / ROCK boards",
+    "Factory CAD/colour match"
+  ],
+  "mirror_glass": {
+    "containment": "Both panes strictly inside actual rim outlines, minimum inset 8.03mm; rear face planar and behind all outer-rim vertices.",
+    "materials": "Casing has no Glass_Smoked/Chrome_Trim/Mirror_Glass faces. Mirror_Glass is opaque, single-sided and rear-facing. Dark opaque backing included.",
+    "hierarchy": "Pane, rim and backing follow matching front-door hinges.",
+    "variants": "Checks pass for both GLBs.",
+    "browser": "Close rear and oblique mirror views inspected in Night Drive and Great White; casing-side view also checked."
+  },
+  "mirror_spike": {
+    "cause": "Stray front-shoulder fragments in legacy rear repair mesh.",
+    "fix": "Restrict rear patch to intended rear region; preserve complete mirror components.",
+    "verification": "Dense aperture rays for both mirrors and both GLBs; rear-patch front-fragment regression check."
+  },
+  "black_contrast": {
+    "paint_linear_floor": 0.022,
+    "trim_linear_rgb": [
+      0.006,
+      0.007,
+      0.009
+    ],
+    "tyre_linear_rgb": [
+      0.007,
+      0.008,
+      0.009
+    ],
+    "verification": "Black side view inspected in browser; material values and preview/controller transform checked. Kotlin test expectation updated; compiler unavailable for rerun in this turn."
+  },
+  "door_geometry": {
+    "rear_shutline": "Reference-shaped curved lower edge and upper line within black C-pillar.",
+    "front_shutline": "Reference-shaped A-pillar boundary; windshield faces extracted as fixed body glass.",
+    "fixed_glass": [
+      "Glass_Windscreen",
+      "Glass_Quarter_L",
+      "Glass_Quarter_R"
+    ],
+    "frames": [
+      "Frame_Door_FL",
+      "Frame_Door_FR",
+      "Frame_Door_RL",
+      "Frame_Door_RR"
+    ],
+    "rear_handles_forward_m": 0.184,
+    "verification": "Both GLBs: fixed windscreen under all door rotations; quarter panes invariant at 25/68 degrees; no fixed main-side-window fragments; complete frame ancestry; rear door profile and forward handle position. Existing regression checks pass."
+  }
+}

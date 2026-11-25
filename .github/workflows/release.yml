@@ -1,0 +1,61 @@
+name: Validate and publish release
+on:
+  push:
+    branches: [main]
+    paths:
+      - VERSION
+      - .github/workflows/release.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the release commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Check committed file checksums
+        run: sha256sum -c SHA256SUMS
+      - name: Install pinned development dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Check release bindings and documentation
+        run: npm test
+      - name: Verify the prebuilt viewer matches its source
+        run: |
+          npm run build
+          git diff --exit-code -- preview/app.js
+      - name: Validate both GLB files
+        run: npm run validate
+      - name: Package the exact committed source
+        run: python3 scripts/package-release.py
+      - name: Publish the versioned release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          version="$(cat VERSION)"
+          tag="v${version}"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release $tag already exists; leaving it unchanged."
+            exit 0
+          fi
+          gh release create "$tag" dist/* \
+            --target "$GITHUB_SHA" \
+            --title "$tag — Fisker Ocean 3D Model" \
+            --notes-file RELEASE_NOTES.md \
+            --latest

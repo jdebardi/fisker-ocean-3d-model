@@ -1,0 +1,3 @@
+const fs=require('node:fs'),path=require('node:path'),validator=require('gltf-validator');
+const root=path.resolve(__dirname,'..');
+(async()=>{const reports={};let errors=0;for(const name of ['ocean.glb','ocean-lite.glb']){const bytes=fs.readFileSync(path.join(root,'models',name));const report=await validator.validateBytes(new Uint8Array(bytes),{uri:name,maxIssues:100});reports[name]={bytes:bytes.length,...report};errors+=report.issues.numErrors;console.log(name+': '+report.issues.numErrors+' errors, '+report.issues.numWarnings+' warnings');}fs.writeFileSync(path.join(root,'validation/asset-validation.json'),JSON.stringify({release:'3.0.0',reports},null,2)+'\n');if(errors)process.exitCode=1;})().catch(e=>{console.error(e);process.exitCode=1;});

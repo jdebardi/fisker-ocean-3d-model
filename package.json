@@ -1,0 +1,20 @@
+{
+  "name": "fisker-ocean-3d-model",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Controllable Fisker Ocean glTF model and local interactive reference viewer",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "build": "node scripts/build-preview.cjs",
+    "test": "node scripts/check-release.mjs",
+    "validate": "node scripts/validate-assets.cjs",
+    "preview": "python3 -m http.server 8000 --bind 127.0.0.1"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "gltf-validator": "2.0.0-dev.3.10"
+  }
+}

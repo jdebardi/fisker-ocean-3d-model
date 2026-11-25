@@ -1,0 +1,623 @@
+{
+  "version": "2.0",
+  "units": "metres",
+  "axes": {
+    "right": "+X",
+    "up": "+Y",
+    "forward": "-Z",
+    "positive_yaw": "left turn about +Y",
+    "wheel_roll_axis": "+X",
+    "forward_roll_sign": -1
+  },
+  "root": "OceanDigitalTwin",
+  "pose": "VehicleYaw",
+  "paint_material": "Paint_Body",
+  "default_wheel_preset": "F3A_22",
+  "wheel_geometry_families": [
+    "F3",
+    "F5",
+    "F6",
+    "F7"
+  ],
+  "wheel_nodes": {
+    "FL": {
+      "steer": "Steer_FL",
+      "roll": "Roll_FL",
+      "position": [
+        -0.824999988079071,
+        0.3941499888896942,
+        -1.3736088275909424
+      ],
+      "style_groups": {
+        "F3": "WheelStyle_F3_FL",
+        "F5": "WheelStyle_F5_FL",
+        "F6": "WheelStyle_F6_FL",
+        "F7": "WheelStyle_F7_FL"
+      }
+    },
+    "FR": {
+      "steer": "Steer_FR",
+      "roll": "Roll_FR",
+      "position": [
+        0.824999988079071,
+        0.3941499888896942,
+        -1.3736088275909424
+      ],
+      "style_groups": {
+        "F3": "WheelStyle_F3_FR",
+        "F5": "WheelStyle_F5_FR",
+        "F6": "WheelStyle_F6_FR",
+        "F7": "WheelStyle_F7_FR"
+      }
+    },
+    "RL": {
+      "steer": null,
+      "roll": "Roll_RL",
+      "position": [
+        -0.824999988079071,
+        0.3941499888896942,
+        1.3736088275909424
+      ],
+      "style_groups": {
+        "F3": "WheelStyle_F3_RL",
+        "F5": "WheelStyle_F5_RL",
+        "F6": "WheelStyle_F6_RL",
+        "F7": "WheelStyle_F7_RL"
+      }
+    },
+    "RR": {
+      "steer": null,
+      "roll": "Roll_RR",
+      "position": [
+        0.824999988079071,
+        0.3941499888896942,
+        1.3736088275909424
+      ],
+      "style_groups": {
+        "F3": "WheelStyle_F3_RR",
+        "F5": "WheelStyle_F5_RR",
+        "F6": "WheelStyle_F6_RR",
+        "F7": "WheelStyle_F7_RR"
+      }
+    }
+  },
+  "lamps": {
+    "Lamp_Tail_L": {
+      "node": "Lamp_Tail_L",
+      "material": "Mat_Tail_L",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "Lamp_Tail_R": {
+      "node": "Lamp_Tail_R",
+      "material": "Mat_Tail_R",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "Lamp_Indicator_L": {
+      "node": "Body_Main",
+      "material": "Mat_Indicator_L",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ],
+      "marker_node": "Lamp_Indicator_L",
+      "geometry": "Integrated bumper material region; change material emission, never transform or hide Body_Main to toggle lights."
+    },
+    "Lamp_Indicator_R": {
+      "node": "Body_Main",
+      "material": "Mat_Indicator_R",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ],
+      "marker_node": "Lamp_Indicator_R",
+      "geometry": "Integrated bumper material region; change material emission, never transform or hide Body_Main to toggle lights."
+    },
+    "Lamp_Reverse_L": {
+      "node": "Body_Main",
+      "material": "Mat_Reverse_L",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ],
+      "marker_node": "Lamp_Reverse_L",
+      "geometry": "Integrated bumper material region; change material emission, never transform or hide Body_Main to toggle lights."
+    },
+    "Lamp_Reverse_R": {
+      "node": "Body_Main",
+      "material": "Mat_Reverse_R",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ],
+      "marker_node": "Lamp_Reverse_R",
+      "geometry": "Integrated bumper material region; change material emission, never transform or hide Body_Main to toggle lights."
+    },
+    "Lamp_Brake_Centre": {
+      "node": "Lamp_Brake_Centre",
+      "material": "Mat_Brake_Centre",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "Lamp_Head_L": {
+      "node": "Lamp_Head_L",
+      "material": "Mat_Head_L",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "Lamp_Head_R": {
+      "node": "Lamp_Head_R",
+      "material": "Mat_Head_R",
+      "default_emissive": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "beams": {
+    "dipped": {
+      "L": {
+        "beam_node": "Beam_Dipped_L",
+        "beam_material": "Beam_Dipped",
+        "spot_node": "Spot_Dipped_L",
+        "anchor": "HeadAnchor_Dipped_L"
+      },
+      "R": {
+        "beam_node": "Beam_Dipped_R",
+        "beam_material": "Beam_Dipped",
+        "spot_node": "Spot_Dipped_R",
+        "anchor": "HeadAnchor_Dipped_R"
+      }
+    },
+    "high": {
+      "L": {
+        "beam_node": "Beam_High_L",
+        "beam_material": "Beam_High",
+        "spot_node": "Spot_High_L",
+        "anchor": "HeadAnchor_High_L"
+      },
+      "R": {
+        "beam_node": "Beam_High_R",
+        "beam_material": "Beam_High",
+        "spot_node": "Spot_High_R",
+        "anchor": "HeadAnchor_High_R"
+      }
+    }
+  },
+  "camera": {
+    "node": "Camera_RearElevated",
+    "position": [
+      0.002881010062992573,
+      6.9202141761779785,
+      9.248808860778809
+    ],
+    "target": [
+      0.002881010062992573,
+      0.6950994729995728,
+      0.026416350156068802
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "orthographic_height": 5.072315692901611,
+    "near": 0.05,
+    "far": 100
+  },
+  "lighting": {
+    "tail_strength": 0.4,
+    "brake_strength": 7,
+    "centre_brake_strength": 10,
+    "head_dipped_strength": 2,
+    "head_high_additional_strength": 5,
+    "indicator_strength": 4,
+    "reverse_strength": 4,
+    "indicator_hz": 1.4,
+    "indicator_duty_cycle": 0.5,
+    "glow_requires_renderer_bloom": true,
+    "spot_lights_default_off": true,
+    "beam_cards_default_hidden": true,
+    "controls": {
+      "headlights": "OFF/DIPPED/HIGH; front lamps only",
+      "tail_lights": "independent boolean; never inferred from headlights",
+      "brake": "overrides rear tail brightness while pressed"
+    },
+    "rear_geometry": "Integrated convex bumper-skin material regions; no separate rear lens overlays.",
+    "front_geometry": "Integrated black-grille material regions, inset from the grille upper boundary; no separate front lens overlays.",
+    "beam_profiles": {
+      "Dipped": {
+        "alpha": 0.19,
+        "emission_strength": 0.65,
+        "shape": "wide feathered road fan"
+      },
+      "High": {
+        "alpha": 0.24,
+        "emission_strength": 1.7,
+        "shape": "longer narrower additive road fan"
+      }
+    }
+  },
+  "wheel_radii_m": {
+    "F3": 0.39415,
+    "F5": 0.39415,
+    "F6": 0.39415,
+    "F7": 0.3815
+  },
+  "wheelbase_m": 2.7472176309650207,
+  "track_m": 1.65,
+  "default_ride_height_radius": 0.39415,
+  "source_url": "https://sketchfab.com/3d-models/fisker-ocean-low-poly-f506bfe876864c04b68bdfc59070739a",
+  "source_license": "CC BY 4.0",
+  "wheel_geometry_note": "Four simplified visual families modelled from Fisker official product guide; not manufacturer CAD.",
+  "indicator_groups": {
+    "L": {
+      "material": "Mat_Indicator_L",
+      "nodes": [
+        "Lamp_Indicator_L",
+        "Lamp_Indicator_Front_L",
+        "Lamp_Indicator_Mirror_L_1",
+        "Lamp_Indicator_Mirror_L_2",
+        "Lamp_Indicator_D_Pillar_L"
+      ],
+      "rear_surface_node": "Body_Main",
+      "front_surface_node": "Body_Main"
+    },
+    "R": {
+      "material": "Mat_Indicator_R",
+      "nodes": [
+        "Lamp_Indicator_R",
+        "Lamp_Indicator_Front_R",
+        "Lamp_Indicator_Mirror_R_1",
+        "Lamp_Indicator_Mirror_R_2",
+        "Lamp_Indicator_D_Pillar_R"
+      ],
+      "rear_surface_node": "Body_Main",
+      "front_surface_node": "Body_Main"
+    }
+  },
+  "presentation": {
+    "profile": "driver_calm",
+    "roughness_min": 0.7,
+    "paint_clearcoat": 0,
+    "environment_reflections": false,
+    "paint_specular_factor": 0.12,
+    "preserve_squared_arch_profile": true,
+    "paint_linear_shadow_floor": 0.022,
+    "default_glb_paint_already_lifted": true
+  },
+  "openings": {
+    "doors": {
+      "FL": {
+        "node": "Hinge_Door_FL",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "open_degrees": -68,
+        "position": [
+          -0.7887076735496521,
+          0.8641766309738159,
+          -0.8266549706459045
+        ],
+        "input": "normalised 0..1"
+      },
+      "RL": {
+        "node": "Hinge_Door_RL",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "open_degrees": -68,
+        "position": [
+          -0.7887076735496521,
+          0.8641766309738159,
+          0.31845876574516296
+        ],
+        "input": "normalised 0..1"
+      },
+      "FR": {
+        "node": "Hinge_Door_FR",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "open_degrees": 68,
+        "position": [
+          0.7944695949554443,
+          0.8641766309738159,
+          -0.8266549706459045
+        ],
+        "input": "normalised 0..1"
+      },
+      "RR": {
+        "node": "Hinge_Door_RR",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "open_degrees": 68,
+        "position": [
+          0.7944695949554443,
+          0.8641766309738159,
+          0.31845876574516296
+        ],
+        "input": "normalised 0..1"
+      }
+    },
+    "tailgate": {
+      "node": "Hinge_Tailgate",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "open_degrees": -82,
+      "position": [
+        0.002881010062992573,
+        1.4713174104690552,
+        1.9093215465545654
+      ],
+      "input": "normalised 0..1"
+    },
+    "sunroof": {
+      "node": "Slide_Sunroof_Front",
+      "translation_open": [
+        0,
+        0.06,
+        0.922
+      ],
+      "lift_fraction": 0.18,
+      "input": "normalised 0..1",
+      "motion": "lift first, then slide rearward above fixed rear panel"
+    },
+    "window_frame_nodes": [
+      "Frame_Door_FL",
+      "Frame_Door_RL",
+      "Frame_Door_FR",
+      "Frame_Door_RR"
+    ],
+    "fixed_windscreen_node": "Glass_Windscreen",
+    "front_door_shutline_source_xz": [
+      [
+        0.565,
+        0.245
+      ],
+      [
+        0.565,
+        0.74
+      ],
+      [
+        0.56,
+        0.78
+      ],
+      [
+        0.52,
+        0.8
+      ],
+      [
+        0.468,
+        0.84
+      ],
+      [
+        0.384,
+        0.88
+      ],
+      [
+        0.288,
+        0.92
+      ],
+      [
+        0.21,
+        0.95
+      ],
+      [
+        0.138,
+        0.97
+      ],
+      [
+        0.11,
+        0.985
+      ]
+    ],
+    "fixed_quarter_glass_nodes": [
+      "Glass_Quarter_L",
+      "Glass_Quarter_R"
+    ],
+    "rear_door_shutline_source_xz": [
+      [
+        -0.575,
+        0.245
+      ],
+      [
+        -0.58,
+        0.32
+      ],
+      [
+        -0.6,
+        0.4
+      ],
+      [
+        -0.635,
+        0.48
+      ],
+      [
+        -0.69,
+        0.55
+      ],
+      [
+        -0.73,
+        0.61
+      ],
+      [
+        -0.752,
+        0.68
+      ],
+      [
+        -0.755,
+        0.715
+      ],
+      [
+        -0.74,
+        0.76
+      ],
+      [
+        -0.735,
+        0.82
+      ],
+      [
+        -0.728,
+        0.84
+      ],
+      [
+        -0.723,
+        0.88
+      ],
+      [
+        -0.708,
+        0.92
+      ],
+      [
+        -0.691,
+        0.95
+      ],
+      [
+        -0.68,
+        0.97
+      ],
+      [
+        -0.675,
+        0.985
+      ]
+    ]
+  },
+  "solar": {
+    "front_nodes": [
+      "SolarCells_Front",
+      "SolarOverlay_Front"
+    ],
+    "rear_nodes": [
+      "SolarCells_Rear",
+      "SolarOverlay_Rear"
+    ],
+    "materials": [
+      "Mat_SolarCells",
+      "Mat_SolarPower"
+    ],
+    "shared_texture": "Solar_Shared_Gradient",
+    "uv_set": 0,
+    "uv_domain": "One closed-roof atlas; U front-to-rear 0..1, V left-to-right 0..1. Both halves retain their atlas coordinates when moving.",
+    "front_u_range": [
+      0,
+      0.484375
+    ],
+    "rear_u_range": [
+      0.490625,
+      1
+    ],
+    "gradient_update": "Update the same texture or uniform gradient for BOTH material instances and both panels. Do not normalise UVs per panel.",
+    "power_input": "normalised 0..1 based on actual watts / calibrated maximum; not simulated generation",
+    "geometry_reference": "Production SolarSky roof, nested stepped traces and fine cell grid; visual interpretation, not manufacturing CAD"
+  },
+  "handles": {
+    "input": "normalised extension 0..1; locked=0, unlocked=1",
+    "travel_m": 0.035,
+    "nodes": {
+      "FL": {
+        "node": "Slide_Handle_FL",
+        "translation_extended": [
+          -0.035,
+          0,
+          0
+        ]
+      },
+      "RL": {
+        "node": "Slide_Handle_RL",
+        "translation_extended": [
+          -0.035,
+          0,
+          0
+        ]
+      },
+      "FR": {
+        "node": "Slide_Handle_FR",
+        "translation_extended": [
+          0.035,
+          0,
+          0
+        ]
+      },
+      "RR": {
+        "node": "Slide_Handle_RR",
+        "translation_extended": [
+          0.035,
+          0,
+          0
+        ]
+      }
+    },
+    "note": "Absolute offsets from imported local rest translation. Door-local X follows its opening hinge. Visual travel, not OEM calibration."
+  },
+  "contrast": {
+    "glass_material": "Glass_Smoked",
+    "mirror_glass_material": "Mirror_Glass",
+    "mirror_glass_nodes": [
+      "Mirror_Glass_L",
+      "Mirror_Glass_R"
+    ],
+    "mirror_rim_nodes": [
+      "Mirror_Rim_L",
+      "Mirror_Rim_R"
+    ],
+    "mirror_back_nodes": [
+      "Mirror_Back_L",
+      "Mirror_Back_R"
+    ],
+    "roof_glass_material": "Roof_Glass",
+    "wheel_well_material": "Mat_WheelWell",
+    "wheel_well_nodes": [
+      "WheelWell_FL",
+      "WheelWell_FR",
+      "WheelWell_RL",
+      "WheelWell_RR"
+    ],
+    "note": "Opaque muted blue-grey glazing and fixed matte-grey liners; do not recolour with paint or rotate with wheels."
+  },
+  "opening_notes": {
+    "interior": "Simplified dark cabin and seat geometry added for opening views, not a detailed factory interior.",
+    "limits": "Door/hatch angles and roof travel are illustrative visual limits, not OEM actuator calibration.",
+    "state_only": "Show received opening states; no vehicle actuator commands are implemented."
+  },
+  "asset_revision": "3.0.0",
+  "wheel_options_file": "wheel-options.json",
+  "paint_presets_file": "paint-presets.json",
+  "default_paint": "silver-lining",
+  "notes": {
+    "initial_visibility": "F3 family visible. Other geometry families and visual beam nodes have zero scale as a portable default; restore scale 1 and set layer visibility when selecting.",
+    "rendering": "PBR materials require app lighting / IBL. Lamp emission and bloom are renderer responsibilities. Optional spotlights are initially zero intensity.",
+    "versioned_api": "Bind by names; never assume node indices or material indices.",
+    "hardware_validation": "Assets validated locally, not benchmarked on target Orange Pi / ROCK hardware."
+  }
+}

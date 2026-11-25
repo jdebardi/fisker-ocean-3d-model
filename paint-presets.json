@@ -1,0 +1,179 @@
+{
+  "source": "https://downloads.ctfassets.net/cghen8gr8e1n/4YChy5ujfeqDpAHOUKkcVp/baac2c6104820ff3723323fac73dba35/Fisker_Ocean_Product_Guide_Feb_2024_US_V11.pdf",
+  "source_pages": [
+    21,
+    22,
+    23
+  ],
+  "accuracy": "Names and finish types follow the official catalogue. RGB values are artistic screen approximations. Marine Layer and Solar Orange were marked Available 2024; actual deliveries are not verified.",
+  "presets": [
+    {
+      "id": "great-white",
+      "name": "Great White",
+      "hex": "#e7e8e3",
+      "finish": "Gloss",
+      "metallic": 0.1,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "night-drive",
+      "name": "Night Drive",
+      "hex": "#10151b",
+      "finish": "Gloss",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "blue-planet",
+      "name": "Blue Planet",
+      "hex": "#245c99",
+      "finish": "Metallic gloss",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "big-sur-blue",
+      "name": "Big Sur Blue",
+      "hex": "#4b627b",
+      "finish": "Metallic matte",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "silver-lining",
+      "name": "Silver Lining",
+      "hex": "#a5adb6",
+      "finish": "Metallic gloss",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "horizon-gray",
+      "name": "Horizon Gray",
+      "hex": "#69747d",
+      "finish": "Metallic gloss",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "mariana",
+      "name": "Mariana",
+      "hex": "#202e40",
+      "finish": "Metallic gloss",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "sun-soaked",
+      "name": "Sun Soaked",
+      "hex": "#a28368",
+      "finish": "Metallic gloss",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "sea-grass",
+      "name": "Sea Grass",
+      "hex": "#4d5c50",
+      "finish": "Metallic gloss",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "red-planet",
+      "name": "Red Planet",
+      "hex": "#a51e2c",
+      "finish": "Gloss",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "stealth-green",
+      "name": "Stealth Green",
+      "hex": "#485247",
+      "finish": "Metallic matte",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "black-pearl",
+      "name": "Black Pearl",
+      "hex": "#121a25",
+      "finish": "Tri-coat approximation",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "catalogued",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "marine-layer",
+      "name": "Marine Layer",
+      "hex": "#d7e0e9",
+      "finish": "Tri-coat approximation",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "announced_2024",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    },
+    {
+      "id": "solar-orange",
+      "name": "Solar Orange",
+      "hex": "#d36529",
+      "finish": "Multi-coat approximation",
+      "metallic": 0.12,
+      "roughness": 0.76,
+      "clearcoat": 0,
+      "catalogue_status": "announced_2024",
+      "delivery_status": "not_verified",
+      "note": "Display approximation; no official paint RGB or colourimetric match is claimed."
+    }
+  ]
+}

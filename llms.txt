@@ -1,0 +1,22 @@
+# Fisker Ocean 3D Model
+
+> Controllable Fisker Ocean GLB assets, interactive viewer and integration reference. Public release v3.0.0; runtime contract 2.0.
+
+## Start here
+
+- [LLM instructions](AGENTS.md): integration and maintenance requirements.
+- [Human overview](README.md): setup, model features and separate viewer features.
+- [Integration contract](docs/INTEGRATION.md): engine-independent implementation.
+- [State mapping](docs/STATE.md): all controls and units.
+- [Openings and solar](docs/OPENINGS_AND_SOLAR.md): transforms, shared atlas and handles.
+- [Model contract](model-contract.json): exact names and settings.
+- [Licence scopes](LICENSE.md): model assets CC BY 4.0; software MIT.
+- [Attribution](ATTRIBUTION.md): original creator and modification credit.
+
+## Reference implementations
+
+- [Browser viewer](preview/src/main.js): complete runnable reference.
+- [Driving and lights](runtime/kotlin/VehicleTwinController.kt): portable Kotlin behaviour.
+- [Openings and handles](runtime/kotlin/VehicleOpeningController.kt): portable Kotlin behaviour.
+- [Platform guides](docs/platforms/README.md): Android, web, Unity, Unreal, Apple, mobile wrappers and Qt.
+- [Validation](docs/VALIDATION.md): acceptance checks and measured limits.

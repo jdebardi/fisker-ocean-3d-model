@@ -1,0 +1,19 @@
+{
+  "release": "3.0.0",
+  "runtime_contract": "2.0",
+  "date": "2026-11-25",
+  "geometry_source": "Completed internal 2.3.3 development geometry; GLB BIN chunks unchanged.",
+  "checks": {
+    "npm_ci": "Passed using package-lock.json.",
+    "npm_build": "Passed.",
+    "npm_test": "Passed: version metadata, required bindings/parentage, documentation links and release files.",
+    "gltf_validator": "Both variants: 0 errors, 0 warnings.",
+    "generic_llm_audit": "No vendor-specific filenames or references in distributed project text.",
+    "asset_continuity": "GLB geometry/texture binary chunks identical to completed development asset.",
+    "browser_http": "Auto-load, file picker for standard/lite, presets and opening controls exercised.",
+    "file_url": "Direct file:// navigation blocked by automation policy; startup branch code-reviewed only.",
+    "kotlin": "Reference sources copied; Kotlin compiler not available for a new execution in this release preparation.",
+    "other_platforms": "Guidance supplied; native engine adapters and target hardware not tested."
+  },
+  "publication": "Local preparation only; no repository update, tag or release created."
+}

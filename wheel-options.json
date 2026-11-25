@@ -1,0 +1,76 @@
+{
+  "source": "https://downloads.ctfassets.net/cghen8gr8e1n/4YChy5ujfeqDpAHOUKkcVp/baac2c6104820ff3723323fac73dba35/Fisker_Ocean_Product_Guide_Feb_2024_US_V11.pdf",
+  "source_pages": [
+    28,
+    29
+  ],
+  "accuracy": "Simplified visual geometry based on the official illustrations, not manufacturer CAD.",
+  "options": [
+    {
+      "id": "F3A_22",
+      "name": "22 inch F3a SlipStream",
+      "family": "F3",
+      "diameter_inches": 22,
+      "finish": "Silver accents over graphite aero covers",
+      "accent_material": "Wheel_F3_Accent",
+      "accent_hex": "#c7cdd4",
+      "accent_roughness": 0.28,
+      "radius_m": 0.39415
+    },
+    {
+      "id": "F3B_22",
+      "name": "22 inch F3b SlipStream Black",
+      "family": "F3",
+      "diameter_inches": 22,
+      "finish": "Black matte accents over graphite aero covers",
+      "accent_material": "Wheel_F3_Accent",
+      "accent_hex": "#24282e",
+      "accent_roughness": 0.5,
+      "radius_m": 0.39415
+    },
+    {
+      "id": "F5A_22",
+      "name": "22 inch F5a AirGlider",
+      "family": "F5",
+      "diameter_inches": 22,
+      "finish": "Anthracite and bright machined accents",
+      "accent_material": "Wheel_F5_Accent",
+      "accent_hex": "#c4cbd3",
+      "accent_roughness": 0.64,
+      "radius_m": 0.39415
+    },
+    {
+      "id": "F5B_22",
+      "name": "22 inch F5b AirGlider Black",
+      "family": "F5",
+      "diameter_inches": 22,
+      "finish": "Gloss black",
+      "accent_material": "Wheel_F5_Accent",
+      "accent_hex": "#151a21",
+      "accent_roughness": 0.7,
+      "radius_m": 0.39415
+    },
+    {
+      "id": "F6_22",
+      "name": "22 inch F6 Vortex",
+      "family": "F6",
+      "diameter_inches": 22,
+      "finish": "Black with bright machined accents",
+      "accent_material": "Wheel_F6_Accent",
+      "accent_hex": "#c7cdd4",
+      "accent_roughness": 0.25,
+      "radius_m": 0.39415
+    },
+    {
+      "id": "F7_20",
+      "name": "20 inch F7 AeroStealth",
+      "family": "F7",
+      "diameter_inches": 20,
+      "finish": "Matte black aero covers",
+      "accent_material": "Wheel_F7_Matte",
+      "accent_hex": "#30353d",
+      "accent_roughness": 0.63,
+      "radius_m": 0.3815
+    }
+  ]
+}
